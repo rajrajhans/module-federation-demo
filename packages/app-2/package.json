@@ -1,0 +1,26 @@
+{
+  "name": "app_2",
+  "version": "1.0.0",
+  "private": true,
+  "repository": "https://github.com/rajrajhans/module-federation-demo",
+  "author": "rajrajhans",
+  "license": "MIT",
+  "scripts": {
+    "start": "serve dist -p 3002",
+    "build": "webpack --mode production",
+    "dev": "concurrently \"webpack --watch\" \"serve dist -p 3002\""
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "concurrently": "^6.3.0",
+    "serve": "^12.0.1",
+    "webpack": "^5.58.2",
+    "webpack-cli": "^4.9.1"
+  }
+}

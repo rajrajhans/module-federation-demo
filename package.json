@@ -1,0 +1,20 @@
+{
+  "name": "module-federation-demo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "repository": "https://github.com/rajrajhans/module-federation-demo",
+  "author": "rajrajhans",
+  "license": "MIT",
+  "scripts": {
+    "start": "wsrun --parallel start",
+    "build": "yarn workspaces run build",
+    "dev": "wsrun --parallel dev",
+    "clean": "rimraf packages/app-1/dist && rimraf packages/app-2/dist"
+  },
+  "devDependencies": {
+    "wsrun": "^5.2.0"
+  }
+}
