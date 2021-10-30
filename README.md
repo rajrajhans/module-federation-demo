@@ -8,6 +8,13 @@ Here, we are using a yarn workspaces monorepo structure for demonstration. We ha
 
 In our case, `app-1` is the **host**, and `app-2` is the **remote**. We are exposing a component named `AppTwoComponent` from `app-2`. This component would be dynamically loaded at runtime when `app-1` starts. 
 
+```
+mf-demo
+├── packages
+    ├── app-1
+    └── app-2
+```
+
 ### Running the demo locally
 
 - Step 1: Install dependencies
